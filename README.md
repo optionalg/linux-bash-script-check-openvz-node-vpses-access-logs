@@ -8,6 +8,14 @@ Script sends an email report to the host node admin. Resulting file is attached 
 
 Script so far supports these access logs: Apache,zPanel,cPanel
 
+# Requirements
+
+Linux
+
+"mutt" software is used to send out report file via email. Alternative is "mail", it can be used if report file in email attachment is not needed (script also create report file in public webserver path)
+
+OpenVZ "vzctl" utility (script can be easilly tweaked to work with different VPS node management utility)
+
 # Installation
 
 chmod 700 /path/to/script

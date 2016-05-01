@@ -1,6 +1,6 @@
 # About, what does it do
 
-Linux bash script to tail access logs of the VPSs hosted on the OpenVZ VPS host node server.
+Linux bash script to tail webserver access logs of the VPSs hosted on the OpenVZ VPS host node server.
 
 The aim is to discover which webpages are hosted on the VPSs and which subpages are visited.
 

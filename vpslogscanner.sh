@@ -46,11 +46,11 @@ vzctl exec $ctid $cmd >> /tmp/allvpslogscanneroutput
 
 done
 
-########## Create webpage out of logfile
+########## Create webpage out of report file
 
 # Create WebPage Out Of Log File command
 cp -f /tmp/allvpslogscanneroutput /vz/root/MYVPSID/home/usernamehere/public_html/vps-logs.txt; vzctl exec MYVPSID chown usernamehere:usernamehere /home/usernamehere/public_html/vps-logs.txt
 
-########## Send email
+########## Send email to admin including report file
 
 echo -e "Script /root/vpslogscanner ran at $(hostname) on $(date) and attached are access logs of all hosted VPSs except CTID $exclude \nView the logs on the web: http://admindomainhere.cz/vps-logs.txt" | mutt -a "/tmp/allvpslogscanneroutput" -s "VPSs access logs Report" -- $adminmail

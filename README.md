@@ -6,7 +6,7 @@ The aim is to discover which webpages are hosted on the VPSs and which subpages 
 
 Script sends an email report to the host node admin. Resulting file is attached to the email and also script create .txt file on public web path so admin can conveniently view the report.
 
-Script so far supports these access logs: Apache,zPanel,cPanel
+Script so far supports these access logs: cPanel,zPanel,Nginx,Webmin,Apache,Apache2
 
 # Requirements
 
